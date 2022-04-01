@@ -1,0 +1,27 @@
+<title>Detailed View</title>
+<mat-card >
+  <mat-card-header>
+    <div ></div>
+    <mat-card-title>{{astroItem.title}}</mat-card-title>
+
+    <mat-card-subtitle *ngIf="astroItem.copyright">{{astroItem.copyright}}</mat-card-subtitle>
+  </mat-card-header>
+
+    <img *ngIf="astroItem.media_type=='image'" mat-card-image [src]="astroItem.url" [alt]="astroItem.title">
+<a [href]="astroItem.url" *ngIf="astroItem.media_type=='video'">
+    <img  mat-card-image [src]="'./assets/youtube-icon.png'" [alt]="astroItem.title">
+  </a>
+
+  <mat-card-content>
+
+      <p>{{astroItem.explanation}}</p>
+
+  </mat-card-content>
+  <mat-card-actions>
+
+  <button class="btn btn-primary" (click)="closeDetail()">Close</button>
+  </mat-card-actions>
+</mat-card>
+
+
+

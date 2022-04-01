@@ -1,0 +1,13 @@
+<div class="container" *ngIf="!showingDetail">
+  <div class="row">
+    <div class="col-sm" *ngFor="let item of astro.slice(0,3)">
+      <app-astro-item [astroInput]="item" (click)="toggleDetail(item.date)" ></app-astro-item>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm" *ngFor="let item of astro.slice(3,6)">
+      <app-astro-item [astroInput]="item" (click)="toggleDetail(item.date)" ></app-astro-item>
+    </div>
+  </div>
+</div>
+<app-astro-detail [astroInput]="astroDetail" (closeButton)="toggleDetail()" *ngIf="showingDetail"></app-astro-detail>

@@ -1,0 +1,22 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{astroItem.title}}</mat-card-title>
+
+    <mat-card-subtitle *ngIf="astroItem.copyright">{{astroItem.copyright}}</mat-card-subtitle>
+  </mat-card-header>
+
+    <img *ngIf="astroItem.media_type=='image'" mat-card-image [src]="astroItem.url" [alt]="astroItem.title">
+
+    <img *ngIf="astroItem.media_type=='video'" mat-card-image [src]="'./assets/youtube-icon.png'" [alt]="astroItem.title">
+  <mat-card-content>
+
+      <p>{{astroItem.date}}</p>
+
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>
+
+
+
