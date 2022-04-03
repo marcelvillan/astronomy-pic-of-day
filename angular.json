@@ -119,6 +119,9 @@
               "devServerTarget": "astronomy-pic-of-day:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
