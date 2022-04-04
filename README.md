@@ -1,3 +1,5 @@
+Visit https://marcelvillan.github.io/astronomy-pic-of-day/ to see the page in real time
+
 # AstronomyPicOfDay
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
