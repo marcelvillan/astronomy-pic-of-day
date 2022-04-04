@@ -1,7 +1,6 @@
 <title>Detailed View</title>
-<mat-card >
+<mat-card class="card" >
   <mat-card-header>
-    <div ></div>
     <mat-card-title>{{astroItem.title}}</mat-card-title>
 
     <mat-card-subtitle *ngIf="astroItem.copyright">{{astroItem.copyright}}</mat-card-subtitle>
@@ -9,7 +8,7 @@
 
     <img *ngIf="astroItem.media_type=='image'" mat-card-image [src]="astroItem.url" [alt]="astroItem.title">
 <a [href]="astroItem.url" *ngIf="astroItem.media_type=='video'">
-    <img  mat-card-image [src]="'./assets/youtube-icon.png'" [alt]="astroItem.title">
+  <iframe [width]="screenWidth*0.8" [height]="screenHeight*0.8" [src]="safeURL" frameborder="0" allowfullscreen class="center"></iframe>
   </a>
 
   <mat-card-content>

@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+body {
+  background-image: url('src/assets/space-background.jpg') ;
+}
+
+.card{
+  margin: 5%;
+  background-color: rgb(162, 175, 209);
+
+  box-shadow: 0 0 50px 150px #ffffff;
+}
+mat-card-content{
+  background-color: rgb(215, 220, 233);
+  border-radius: 2%;
+  padding: 2%;
+}
+button{
+  width:100%;
+}
+mat-card-header{
+
+  background-color: rgb(215, 220, 233);
+  border-radius: 5%;
+  margin-bottom: 3%;
+}
