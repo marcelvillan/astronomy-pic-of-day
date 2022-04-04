@@ -16,10 +16,10 @@ export class AstroService implements OnInit {
     this.astrosSub.next(this.astros.slice());
   }
   orderAstrosDesc() {
-   // this.astros.sort((a,b)=>a.date.valueOf()-b.date.valueOf());
-   this.astros.sort(function(a,b): any{
-    return (new Date(a.date)).getTime() - (new Date(b.date)).getTime();
-});
-this.astros.reverse();
+    // this.astros.sort((a,b)=>a.date.valueOf()-b.date.valueOf());
+    this.astros.sort(function (a, b): any {
+      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    });
+    this.astros.reverse();
   }
 }

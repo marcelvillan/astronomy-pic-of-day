@@ -6,8 +6,7 @@ import { DataStorageService } from '../shared/data-storage.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
-  providers:[AstroService]
+  styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
   private astrosLoaded: Subscription;
